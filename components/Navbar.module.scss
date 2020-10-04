@@ -1,0 +1,40 @@
+@import '../styles/colors.scss';
+
+.navbar {
+  position: fixed;
+  width: 100vw;
+  padding: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 300ms, visibility 300ms;
+  ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    li {
+      position: relative;
+      list-style: none;
+      display: inline-block;
+      padding: 0 1em;
+
+      a {
+        // color: $white;
+        text-decoration: none;
+        transition: color 0.2s ease-in-out;
+        &:active {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.navbar--hidden {
+  visibility: hidden;
+  opacity: 0;
+}
