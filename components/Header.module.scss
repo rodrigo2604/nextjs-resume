@@ -1,0 +1,49 @@
+@import '../styles/colors.scss';
+
+.header {
+  background-color: $secondary;
+  height: 100vh;
+  color: $white;
+  flex-direction: column;
+  justify-content: space-between;
+  .headerContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      margin: 0.2em 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.5em;
+      max-width: 55vw;
+      text-align: center;
+    }
+
+    .btnContainer {
+      position: absolute;
+      bottom: 0;
+      padding-bottom: 0.3em;
+
+      a {
+        color: $white;
+        text-decoration: none;
+        font-size: 0.8em;
+        transition: color 600ms;
+        &:hover {
+          color: blue;
+        }
+        &:active {
+          color: none;
+        }
+      }
+    }
+  }
+}
